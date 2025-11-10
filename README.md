@@ -1,14 +1,13 @@
----
 
 # Auto Transcriber + YouTube Metadata Generator (WIP)
 
-This project is a work-in-progress tool that automates parts of the video publishing workflow. It currently handles":"
+This project is a work-in-progress tool that automates parts of the video publishing workflow. It currently handles:
 
 ✅ **video → audio → transcript**
 
 I’m gradually expanding it so the pipeline becomes smarter, more structured, and eventually (hopefully) fully automated.
 
-This is something I’m building for fun and learning":" but it’s already useful, and who knows where it goes next.
+This is something I’m building for fun and learning: but it’s already useful, and who knows where it goes next.
 
 ---
 
