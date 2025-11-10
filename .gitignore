@@ -1,2 +1,4 @@
 .env
 .env.local
+*.mp3
+*.MP4
