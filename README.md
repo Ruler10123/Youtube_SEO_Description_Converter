@@ -2,7 +2,7 @@
 
 This project is a work-in-progress tool that automates parts of the video publishing workflow for video transcription, captions, chapters, and YouTube SEO metadata. It currently handles:
 
-✅ **video → audio → transcript**
+**video → audio → transcript**
 
 I’m gradually expanding it so the pipeline becomes smarter, more structured, and eventually (hopefully) fully automated.
 
