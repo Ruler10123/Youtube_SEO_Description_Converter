@@ -1,4 +1,3 @@
-
 # Auto Transcriber + YouTube Metadata Generator (WIP)
 
 This project is a work-in-progress tool that automates parts of the video publishing workflow for video transcription, captions, chapters, and YouTube SEO metadata. It currently handles:
@@ -9,17 +8,18 @@ I’m gradually expanding it so the pipeline becomes smarter, more structured, a
 
 ---
 
-## Overview
+## Overview ʕ•ᴥ•ʔ
 
 This project is a personal tool I built to speed up video production for the **Meloy Engineering Entrepreneurship Program** at Texas A&M University. With a campus of more than **70,000 students**, the Meloy Program creates content that reaches and supports a huge community, and producing that content quickly and consistently matters.
 
 The workflow often involves many repeatable tasks:
-* Convert video → audio
-* Generate accurate captions
-* Pull SEO keywords and hashtags
-* Draft descriptions
-* Create chapter markers
-* Prepare content for YouTube upload
+
+- Convert video → audio
+- Generate accurate captions
+- Pull SEO keywords and hashtags
+- Draft descriptions
+- Create chapter markers
+- Prepare content for YouTube upload
 
 I wanted to automate these steps so I could focus more on creativity, storytelling, and production quality rather than repeating manual work.
 
@@ -27,37 +27,39 @@ This project started as something fun: a personal experiment to learn Whisper, G
 
 ---
 
-## Why I built this
+## Why I built this (ง'̀-'́)ง
 
 I’m running content creation workflows for the **Meloy Engineering Entrepreneurship** channel, and part of the job is optimizing videos for clarity, accessibility, and reach.
 
 Manually doing this for each video:
-* wastes time
-* introduces inconsistencies
-* slows down creativity
+
+- wastes time
+- introduces inconsistencies
+- slows down creativity
 
 This project was a chance to learn:
-* distributed design
-* GPU inference optimization
-* API + microservice patterns
-* how to architect efficient workflows
-* how to build production-adjacent tools
-* how to automate repetitive tasks in content pipelines
+
+- distributed design
+- GPU inference optimization
+- API + microservice patterns
+- how to architect efficient workflows
+- how to build production-adjacent tools
+- how to automate repetitive tasks in content pipelines
 
 It’s both practical and exploratory, and something I can iterate on and improve.
 
 ---
 
-## Current Features
+## Current Features (͡ ͡° ͜ つ ͡͡°)
 
-* Convert video to audio
-* Transcribe audio to text
-* Optional transcript with timestamps
-* Simple folder-based processing
+- Convert video to audio
+- Transcribe audio to text
+- Optional transcript with timestamps
+- Simple folder-based processing
 
 ---
 
-## Planned Pipeline
+## Planned Pipeline (づ｡◕‿‿◕｡)づ
 
 1. **video → audio → transcript (with timestamps)**
 2. **LLM processing** for descriptions, keywords, SEO text
@@ -69,84 +71,90 @@ It’s both practical and exploratory, and something I can iterate on and improv
 
 ## Roadmap / Things to Implement
 
-### ✅ Faster-Whisper
+### Faster-Whisper
 
 Switch from Whisper to **faster-whisper** for:
 
-* better speed
-* lower VRAM usage
-* improved throughput
-* smoother performance on GPU
+- better speed
+- lower VRAM usage
+- improved throughput
+- smoother performance on GPU
 
-### ✅ Structured JSON Output
+**RESULT**: 538.0857 seconds -> 71.1989 seconds (755.75% increased throughput)
+
+### Structured JSON Output
 
 Use JSON to store:
 
-* title suggestions
-* short + long descriptions
-* chapters
-* tags + keywords
-* transcript metadata
-* timestamps
-* future extensions
+- title suggestions
+- short + long descriptions
+- chapters
+- tags + keywords
+- transcript metadata
+- timestamps
+- future extensions
 
-### ✅ Microservice Setup
+### Microservice Setup
 
 Run the pipeline on a PC with better specs, accessible from any device.
 
 Plan:
 
-* containerize the service (Docker)
-* run FastAPI backend
-* enable GPU acceleration
-* accept uploads or shared folder input
-* return generated artifacts
+- containerize the service (Docker)
+- run FastAPI backend
+- enable GPU acceleration
+- accept uploads or shared folder input
+- return generated artifacts
 
-### ✅ File Handling
+### File Handling
 
 Possible ingestion methods:
 
-* direct API upload
-* shared folder
-* Tailscale file transfer
-* mounted network drive
-* remote HTTP download
+- direct API upload
+- shared folder
+- Tailscale file transfer
+- mounted network drive
+- remote HTTP download
 
-### ✅ Hashing / Skip Duplicates
+### Hashing / Skip Duplicates
 
 Use SHA-256 to:
 
-* check for duplicates
-* skip reprocessing
-* speed up workflow
-* save compute resources
+- check for duplicates
+- skip reprocessing
+- speed up workflow
+- save compute resources
 
-### ✅ YouTube Data API Integration
+### YouTube Data API Integration
 
 Eventually automate:
 
-* draft creation
-* title + description population
-* tags
-* captions
-* thumbnails (future idea)
-* video scheduling
+- draft creation
+- title + description population
+- tags
+- captions
+- thumbnails (future idea)
+- video scheduling
 
 ---
+
+## ┬┴┬┴┤ ͜ʖ ͡°) ├┬┴┬┴
 
 ## To-Do List (Short Version)
 
-* [ ] Replace Whisper with faster-whisper
-* [ ] Add timestamped transcripts
-* [ ] Integrate LLM for metadata generation
-* [ ] Output structured JSON + clean txt summaries
-* [ ] Build a microservice wrapper (API)
-* [ ] Add SHA-256 dedupe logic
-* [ ] Implement YouTube API upload
-* [ ] Optional: word-level timestamps via whisperX
-* [ ] Optional: UX improvements for readability
+- [x] Replace Whisper with faster-whisper
+- [ ] Add timestamped transcripts
+- [ ] Integrate LLM for metadata generation
+- [ ] Output structured JSON + clean txt summaries
+- [ ] Build a microservice wrapper (API)
+- [ ] Add SHA-256 dedupe logic
+- [ ] Implement YouTube API upload
+- [ ] Optional: word-level timestamps via whisperX
+- [ ] Optional: UX improvements for readability
 
 ---
+
+## (ノ ಠ 益 ಠ)ノ彡 ┻━┻
 
 ## Notes
 
@@ -155,3 +163,25 @@ This is an in-progress learning project, and the design may evolve as I go. The 
 If it eventually becomes a one-button “publish to YouTube with everything generated automatically,” that would be a fun milestone.
 
 ---
+
+## Thanks For Read(ing)Me!
+
+```text
+⠸⣷⣦⠤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⠀⠀
+⠀⠙⣿⡄⠈⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⠊⠉⣿⡿⠁⠀⠀
+⠀⠀⠈⠣⡀⠀⠀⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠁⠀⠀⣰⠟
+⠀⠀⠀⠀⠈⠢⣄⠀⡈⠒⠊⠉⠁⠀⠈⠉⠑⠚⠀⠀⣀⠔⢊⣠⠤⠒⠊⠉⠀⡜
+⠀⠀⠀⠀⠀⠀⠀⡽⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠩⡔⠊⠁⠀⠀⠀⠀⠀⠀⠇
+⠀⠀⠀⠀⠀⠀⠀⡇⢠⡤⢄⠀⠀⠀⠀⠀⡠⢤⣄⠀⡇⠀⠀⠀⠀⠀⠀⠀⢰⠀
+⠀⠀⠀⠀⠀⠀⢀⠇⠹⠿⠟⠀⠀⠤⠀⠀⠻⠿⠟⠀⣇⠀⠀⡀⠠⠄⠒⠊⠁⠀
+⠀⠀⠀⠀⠀⠀⢸⣿⣿⡆⠀⠰⠤⠖⠦⠴⠀⢀⣶⣿⣿⠀⠙⢄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢻⣿⠃⠀⠀⠀⠀⠀⠀⠀⠈⠿⡿⠛⢄⠀⠀⠱⣄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⠈⠓⠦⠀⣀⣀⣀⠀⡠⠴⠊⠹⡞⣁⠤⠒⠉⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⠃⠀⠀⠀⠀⡌⠉⠉⡤⠀⠀⠀⠀⢻⠿⠆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠰⠁⡀⠀⠀⠀⠀⢸⠀⢰⠃⠀⠀⠀⢠⠀⢣⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢶⣗⠧⡀⢳⠀⠀⠀⠀⢸⣀⣸⠀⠀⠀⢀⡜⠀⣸⢤⣶⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠻⣿⣦⣈⣧⡀⠀⠀⢸⣿⣿⠀⠀⢀⣼⡀⣨⣿⡿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠻⠿⠿⠓⠄⠤⠘⠉⠙⠤⢀⠾⠿⣿⠟⠋
+```
+
+_Thanks for reading — contributions and feedback welcome._
