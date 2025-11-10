@@ -9,4 +9,4 @@ for filename in os.listdir(folder_path):
     if os.path.isfile(file_path):
         output_file_path = os.path.join(output_folder, f'{filename}.mp3')
         subprocess.run(['ffmpeg', '-i', file_path, output_file_path])
-        print(f"Conversion complete! {output_file_path} has been created.")
+        print(f"\nConversion complete! {output_file_path} has been created.\n")

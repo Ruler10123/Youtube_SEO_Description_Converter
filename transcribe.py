@@ -16,4 +16,4 @@ for filename in os.listdir(folder_path):
                 file.write(f"[{segment['start']:.2f}-{segment['end']:.2f}] {segment['text']}\n")
             for word in segment["words"]:
                 file.write(f"  {word['word']} [{word['start']:.2f}-{word['end']:.2f}]\n")
-        print(f"Conversion complete! {output_file_path} has been created.")
+        print(f"\nConversion complete! {output_file_path} has been created.\n")
