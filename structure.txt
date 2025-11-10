@@ -8,8 +8,8 @@ Here's probably how it's gonna go:
 (like it probably will create a draft with all of the necessary info, and SEO keywords)
 
 Things to Implement:
-- Switch from whisper to faster_whisper because I guess it's just better (running on PyTorch with high VRAM
-usage and slow CPU support vs just like faster and better version of it)
+- ✅ Switch from whisper to faster_whisper because I guess it's just better (running on PyTorch with high VRAM
+usage and slow CPU support vs just like faster and better version of it) RESULT: 538.0857 seconds -> 71.1989 seconds (755.75% increased throughput)
 - JSON output from LLM or something
 - Probably set this up on my PC as a microservice I can just call so I use its computing resources instead of my laptop with pretty bad specs lol
     - Would this be like a Docker container?
