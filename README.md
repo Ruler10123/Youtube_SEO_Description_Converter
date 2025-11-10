@@ -1,13 +1,50 @@
 
 # Auto Transcriber + YouTube Metadata Generator (WIP)
 
-This project is a work-in-progress tool that automates parts of the video publishing workflow. It currently handles:
+This project is a work-in-progress tool that automates parts of the video publishing workflow for video transcription, captions, chapters, and YouTube SEO metadata. It currently handles:
 
 ✅ **video → audio → transcript**
 
 I’m gradually expanding it so the pipeline becomes smarter, more structured, and eventually (hopefully) fully automated.
 
-This is something I’m building for fun and learning: but it’s already useful, and who knows where it goes next.
+---
+
+## Overview
+
+This project is a personal tool I built to speed up video production for the **Meloy Engineering Entrepreneurship Program** at Texas A&M University. With a campus of more than **70,000 students**, the Meloy Program creates content that reaches and supports a huge community, and producing that content quickly and consistently matters.
+
+The workflow often involves many repeatable tasks:
+* Convert video → audio
+* Generate accurate captions
+* Pull SEO keywords and hashtags
+* Draft descriptions
+* Create chapter markers
+* Prepare content for YouTube upload
+
+I wanted to automate these steps so I could focus more on creativity, storytelling, and production quality rather than repeating manual work.
+
+This project started as something fun: a personal experiment to learn Whisper, GPU inference, microservices, and system design. But it quickly became a genuinely useful tool for the production pipeline. And maybe one day I’ll scale it further or adapt it for other teams, creators, or tools. Who knows?
+
+---
+
+## Why I built this
+
+I’m running content creation workflows for the **Meloy Engineering Entrepreneurship** channel, and part of the job is optimizing videos for clarity, accessibility, and reach.
+
+Manually doing this for each video:
+* wastes time
+* introduces inconsistencies
+* slows down creativity
+
+This project was a chance to learn:
+* distributed design
+* GPU inference optimization
+* API + microservice patterns
+* how to architect efficient workflows
+* how to build production-adjacent tools
+* how to automate repetitive tasks in content pipelines
+
+It’s both practical and exploratory, and something I can iterate on and improve.
 
 ---
 
