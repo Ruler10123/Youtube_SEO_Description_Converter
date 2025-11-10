@@ -8,7 +8,7 @@ This project is a work-in-progress tool that automates parts of the video publis
 
 I’m gradually expanding it so the pipeline becomes smarter, more structured, and eventually (hopefully) fully automated.
 
-This is something I’m building for fun and learning — but it’s already useful, and who knows where it goes next.
+This is something I’m building for fun and learning: but it’s already useful, and who knows where it goes next.
 
 ---
 
