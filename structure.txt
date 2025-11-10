@@ -1,0 +1,19 @@
+So far I have converted video to audio to a simple transcript
+- I might want a better transcript that has timestamps, but we'll see (ok lol I did it)
+
+Here's probably how it's gonna go:
+- video -> audio -> transcript (w/ timestamps) -> throw it into an LLM (LOL) ->
+-> return a structured JSON or just nice txt file for ease of reading and copying for me ->
+-> implement JSON with Youtube Data API to automate the video creation pipeline in like one button lol
+(like it probably will create a draft with all of the necessary info, and SEO keywords)
+
+Things to Implement:
+- Switch from whisper to faster_whisper because I guess it's just better (running on PyTorch with high VRAM
+usage and slow CPU support vs just like faster and better version of it)
+- JSON output from LLM or something
+- Probably set this up on my PC as a microservice I can just call so I use its computing resources instead of my laptop with pretty bad specs lol
+    - Would this be like a Docker container?
+    - How would I send/have the scripts see my video files unless they're already in there?
+    - Proably something with Tailscale because I know they have file sharing over the network (or something)
+- Hashing: sha256 to check for duplicates (and skip over them so there's no extra computing for optimization)
+- Youtube Data API bc that's a thing ig, let's see if we can automate the Youtube video creation pipeline :>>>
